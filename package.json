@@ -67,6 +67,7 @@
     "webpack": "1.13.3"
   },
   "dependencies": {
+    "asana": "^0.15.0",
     "babel-polyfill": "6.16.0",
     "body-parser": "1.15.2",
     "express": "4.14.0",

@@ -11,5 +11,5 @@ Feature: Index page
   #Given I'm logged in
 
   Scenario: I check the index page
-  When I open the site
-  Then I see the "Hello" text on the page
+  #  When I open the site
+  #  Then I see the "Hello" text on the page

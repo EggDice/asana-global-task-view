@@ -20,9 +20,7 @@ function World() {
 }
 
 function setupConfig(config) {
-  config.update('newsService','server')
-  config.update('newsProvider','memory')
-  config.update('authService','memory')
+  config.update('asanaService','memory')
 }
 
 function extendContainer() {
