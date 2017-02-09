@@ -15,4 +15,70 @@ span {
 
 body {
   background-color: $primary-color;
+  margin: 0;
 }
+
+.app {
+  &__content {
+    display: flex;
+    flex-orientation: row;
+
+  }
+}
+
+.tasks {
+  order: 0;
+  background: #ffffff;
+  padding: 12px;
+  width: 100%;
+}
+
+.tags {
+  width: 150px;
+  order: -1;
+}
+
+.section {
+  counter-reset: item;
+
+  h2 {
+    padding-left: 2em;
+  }
+
+  ol {
+    list-style: none;
+  }
+
+  &__task {
+    height: 28px;
+    line-height: 28px;
+    border-bottom: 1px solid #cccccc;
+    padding-left: 4em;
+    font-size: 13px;
+
+    &::before {
+      font-weight: normal;
+      display: inline-block;
+      content: counter(item);
+      counter-increment: item;
+      width: 5em;
+      margin-left: -8em;
+      font-size: 11px;
+      color: #aaaaaa;
+    }
+
+    &:last-child {
+      border-bottom: 0; 
+    }
+
+    &.heading {
+      font-weight: bold;
+      border-bottom: 1px solid $primary-font-color;
+
+      &::before {
+        width: 3em;
+      }
+    }
+  }
+}
+
